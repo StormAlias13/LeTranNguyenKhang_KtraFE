@@ -1,0 +1,165 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>HTML_CSS</title>
+    <style>
+        *{
+            box-sizing:border-box;margin:0;padding:0
+
+        }
+        body{
+            font-family:Arial,sans-serif;background:#e3e6e6;color:#0f1111
+
+        }
+        a{
+            text-decoration:none;color:inherit
+
+        }
+        .header{
+            display:flex;
+            align-items:center;
+            gap:16px;
+            background:#131921;
+            color:#fff;
+            padding:8px 16px;
+            font-size:13px
+
+        }
+        .logo{
+            font-size:26px;font-weight:700
+
+        }
+        .search{
+            flex:1;display:flex;height:40px
+
+        }
+        .search select{
+            width:50px;border:0;background:#e6e6e6;border-radius:4px 0 0 4px
+
+        }
+        .search input{
+            flex:1;border:0;padding:0 10px;outline:0
+
+        }
+
+        .search button
+        {width:46px;border:0;background:#febd69;border-radius:0 4px 4px 0
+
+        }
+        .subnav{
+            display:flex;gap:20px;background:#232f3e;color:#fff;padding:8px 16px;font-size:14px
+
+        }
+        .hero{
+            height:380px;display:flex;justify-content:center;align-items:flex-start;gap:60px;padding-top:40px;
+          background:linear-gradient(#2b3a67,#6d83b5 60%,#e3e6e6)
+
+        }
+        .hero h2{
+            color:#fff;font-size:34px
+
+        }
+        .hero img{
+            width:200px;height:200px;object-fit:cover;border-radius:12px
+
+        }
+        main{
+            max-width:1500px;margin:-230px auto 0;padding:0 20px
+
+        }
+        .grid
+        {
+            display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-bottom:20px
+
+        }
+        .card,.wide{
+            background:#fff;padding:20px
+
+        }
+        .card{
+            display:flex;flex-direction:column
+
+        }
+        .card h3,.wide h3{
+            font-size:21px;margin-bottom:12px
+
+        }
+        .big{
+            width:100%;height:300px;object-fit:cover
+
+        }
+        .quad{
+            display:grid;grid-template-columns:1fr 1fr;gap:12px
+
+        }
+        .quad img{width:100%;height:110px;object-fit:cover}
+        .quad span{font-size:12px}
+        .card>a{margin-top:auto;padding-top:14px;color:#007185;font-size:13px}
+        .shirts{display:flex;gap:10px;overflow-x:auto}
+        .shirts img{width:150px;height:200px;object-fit:cover}
+        footer{margin-top:30px;background:#131921;color:#ddd}
+        .top{display:block;text-align:center;background:#37475a;padding:15px;font-size:13px}
+        .cols{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1000px;margin:0 auto;padding:40px 20px}
+        .cols h4{color:#fff;margin-bottom:10px}
+        .cols a{display:block;font-size:14px;margin-bottom:8px}
+        .copy{text-align:center;font-size:12px;padding:20px}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">amazon</a>
+        <a href="#"><i class="fas fa-map-marker-alt"></i> Deliver to Vietnam</a>
+        <form class="search"><select><option>All</option></select><input placeholder="Search Amazon"><button type="button"><i class="fas fa-search"></i></button></form>
+        <a href="#"><i class="fas fa-globe"></i> EN</a>
+        <a href="#">Hello, sign in<br><b>Account &amp; Lists</b></a>
+        <a href="#">Returns<br><b>&amp; Orders</b></a>
+        <a href="#"><i class="fas fa-shopping-cart"></i> <b>Cart</b></a>
+    </header>
+    <nav class="subnav"><a href="#"><i class="fas fa-bars"></i> All</a><a href="#">Today's Deals</a><a href="#">Customer Service</a><a href="#">Registry</a>
+    <a href="#">Gift Cards</a>
+    <a href="#">Sell</a></nav>
+    <section class="hero">
+        <div class="hero-text"><h2>Toys for<br>little ones</h2></div>
+        <img src="https://m.media-amazon.com/images/I/61upHi2gzaL._AC_AIweblab1431263,T1_FMavif_SF1282.5,2052_QL54_.jpg?aicid=homepage-single-creative-card" alt="">
+    </section>
+    <main>
+        <section class="grid"><div class="card"><h3>Get Your Game On</h3><img class="big" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzrW1AhZ6MhDfENfiP35yRjn02YK6oEtaLI3i4eGqhgQ&s=10" alt=""><a href="#">See more</a></div>
+        <div class="card"><h3>Shop for your home essentials</h3><div class="quad"><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ex_-reldCimuYIfxncVcChY94y7ExHbY09BIX_kHxw&s=10" alt=""><span>Cleaning</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlkfUcoylzhsueO4ofFXyzf0raqxII9217eAx1wd48FA&s=10" alt=""><span>Storage</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFRS_CJWFRZd7Ad2hy3yB2kgF4MvQQ5m9OVj4I9iZbyw&s=10" alt=""><span>Decor</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDQ09UdVP1U6Dzus_GJK4qdDkV2YH-zQDZU7TYEJLERw&s=10" alt=""><span>Bath</span></div></div><a href="#">See more</a></div>
+        <div class="card"><h3>Shop Fashion for less</h3>
+            <div class="quad"><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH36Ni0ZpFMmY0KdATpEIH-ZKLlviES-ckp9dpSGD-Gw&s=10" alt=""><span>Dresses</span>
+                 </div><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPu-Q80hwgRwoQiVGLvxCghHq0xwiYMZQTRXFPVCvtXA&s=10" alt=""><span>Jeans</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjb8gfb4RbyOfVDU3LIVKblSXNyMZEzGxS63skauzcqA&s=10" alt=""><span>Shoes</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUye1xoeWRQkzjfaosHywGXBMbffn8NtSDD9U93Mz9Gw&s" alt=""><span>Bags</span></div>
+            </div><a href="#">See all deals</a></div>
+        <div class="card"><h3>Refresh Your Space</h3><div class="quad"><div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YhTr71MC3uYYl272OoEUldhBvdeK3sE16ZBnJqbKTQ&s=10" alt=""><span>Plants</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YhTr71MC3uYYl272OoEUldhBvdeK3sE16ZBnJqbKTQ&s=10" alt=""><span>Plants</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YhTr71MC3uYYl272OoEUldhBvdeK3sE16ZBnJqbKTQ&s=10" alt=""><span>Plants</span></div>
+            <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2YhTr71MC3uYYl272OoEUldhBvdeK3sE16ZBnJqbKTQ&s=10" alt=""><span>Plants</span></div></div>
+            <a href="#">See more</a></div>
+        </section>
+        <section class="wide"><h3>Related To Items You have viewed</h3><div class="shirts">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlxmztxFg185Mvc2Vmre7KNqj55WjDtNlfhUbm3aJtqw&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjDQ9Y-QtUdQgdd2H4xB2WyupFqnNYXG3T3UlNyzZMw&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzikP_xAzBjsoBHpaN2A7LeQrWl80OAdo7L22b8LRaDg&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyNlUITpwaclBG4y9ds2KBlIa9iDcUsZUb66-fJjkhOg&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiq36Pf7OklHN-d3AVOnAmRxKcoNBP9YmShCx9YjKm2g&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAHCP1uByLhfo74NVMxxS2psJ_nZYEzbU99BU95Y0tNw&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjPbKvT772do0NMHL1ERpeabrGJfbTx817jI7wXGGROw&s=10" alt="">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2SjIOXXh5IchaVtr1UECtueGFO8JRtleRAW0wz6PBBw&s=10" alt=""></div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
